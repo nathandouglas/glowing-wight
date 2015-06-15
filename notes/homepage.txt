@@ -1,0 +1,39 @@
+Welcome Page with Picture of Family and Beautiful Text 
+
+Big fat picture
+
+Horizontal scrolling
+
+Business values
+
+Schedule appointment today!
+
+Resources
+---------
+
+Customer:
+
+*email: collection<string>
+*first name <string>
+*last name <string>
+returning? <bool>
+*phone <string>
+address:
+  zip <num>
+  street <string>
+
+
+When sending a new email, there is an opportunity to build a new customer object. A flag could be there to determine if they are a guest, returning customer, or registered user. There is also the opportunity to build an archive of emails. An email object can have a customer and email associated with it. An email contains one user, and users can potentially have a collection of emails assoicaited with them. 
+
+The email controller would be responsible for:
+  -retrieving a new customer object
+  -determining if the user is already in the DB,
+    if so, don't create a new user
+    if not, create a new user
+  -saving email to DB
+  -emailing kevin
+
+
+
+
+
