@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <% if !@user.firstname.blank? %>
+      <h2><%= @user.firstname %>, </br> </h2>
+    <% end %>
+    <p>We would like to thank you for your interest in DAO Lawns & More.</p>
+    <p>
+      We sincerely appreciate your time and look forward to speaking with you.
+    </p>
+    <p>
+      For up-to-date information regarding specials and discounts, follow us on facebook!
+      </br></br>
+      <!-- TODO update with DAO's facebook page link -->
+      <a href="http://www.facebook.com" target="_blank"> <%= image_tag('facebook.png') %> </a>
+    </p>
+    <p>Kevin Lipscomp</br>DAO Lawns & More </br> (256) 504-9182</br>kevin.m.lipscomb@gmail.com</p>
+  </body>
+</html>

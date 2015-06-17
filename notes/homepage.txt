@@ -1,4 +1,4 @@
-Welcome Page with Picture of Family and Beautiful Text 
+Welcome Page with Picture of Family and Beautiful Text
 
 Big fat picture
 
@@ -23,7 +23,7 @@ address:
   street <string>
 
 
-When sending a new email, there is an opportunity to build a new customer object. A flag could be there to determine if they are a guest, returning customer, or registered user. There is also the opportunity to build an archive of emails. An email object can have a customer and email associated with it. An email contains one user, and users can potentially have a collection of emails assoicaited with them. 
+When sending a new email, there is an opportunity to build a new customer object. A flag could be there to determine if they are a guest, returning customer, or registered user. There is also the opportunity to build an archive of emails. An email object can have a customer and email associated with it. An email contains one user, and users can potentially have a collection of emails assoicaited with them.
 
 The email controller would be responsible for:
   -retrieving a new customer object
@@ -32,8 +32,4 @@ The email controller would be responsible for:
     if not, create a new user
   -saving email to DB
   -emailing kevin
-
-
-
-
 

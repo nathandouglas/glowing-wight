@@ -1,0 +1,9 @@
+Figure out where to put config data for service (e.g. "email")
+  Create an UNTRACKED config file that will be used to store password for email account on gmail
+
+Figure out how what setting to configure for deployment on Heroku.
+  Like how to set up actions to migrate the DB
+
+Get welcome messages and text for response emails.
+
+
