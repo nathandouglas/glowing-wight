@@ -1,32 +1,43 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- * NOTE! This file was originally application.css
- *
- *= require_tree .
- *= require_self
- */
- @import "materialize/components/color";
- $primary-color: color("blue", "lighten-2") !default;
- @import "materialize";
- @import "font-awesome";
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+* or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any styles
+* defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+* file per style scope.
+*
+* NOTE! This file was originally application.css
+*
+*= require_tree .
+*= require_self
+*/
+@import "materialize/components/color";
+@import "colors";
 
- //Sticky footer styles
- body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+$primary-color: $color-primary-0 !default;
+$primary-color-light: false !default;
+$primary-color-dark: false !default;
 
+@if not $primary-color-light {
+  $primary-color-light: lighten($primary-color, 15%);
+}
+@if not $primary-color-dark {
+  $primary-color-dark: darken($primary-color, 15%);
+}
+
+@import "materialize";
+@import "font-awesome";
+
+//Sticky footer styles
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
   main {
     flex: 1 0 auto;
-  }
+}
