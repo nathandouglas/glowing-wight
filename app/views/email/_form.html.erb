@@ -3,11 +3,11 @@
   <!-- User info -->
   <div class="row">
     <div class="input-field col s5">
-      <%= u.label :firstname %>
+      <%= u.label :firstname, "First Name" %>
       <%= u.text_field :firstname, class: 'validate'%>
     </div>
     <div class="input-field col s5">
-      <%= u.label :lastname %>
+      <%= u.label :lastname, "Last Name" %>
       <%= u.text_field :lastname, class: 'validate'%>
     </div>
   </div>
@@ -17,7 +17,7 @@
     <%= u.email_field :emailaddress, class: 'validate'%>
   </div>
   <div class="input-field col s5">
-    <%= u.label :telephone %>
+    <%= u.label :phone %>
     <%= u.telephone_field :phone, class: 'validate'%>
   </div>
   <div class="row">

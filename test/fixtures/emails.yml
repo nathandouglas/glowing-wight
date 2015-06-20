@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  body: MyText
-  user_id: 
+  body: Hi how much do you charge per acre?
+  user_id: 1
 
 two:
-  body: MyText
-  user_id: 
+  body: What is the average price per yard?
+  user_id: 2
