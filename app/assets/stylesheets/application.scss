@@ -38,6 +38,51 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
-  main {
-    flex: 1 0 auto;
+
+main {
+  flex: 1 0 auto;
 }
+
+.primary-light-background {
+  background-color: $color-primary-1;
+}
+
+.primary-text-color {
+  color: $color-secondary-1-4;
+}
+p, h2, h5 {
+  color: $color-secondary-1-4;
+}
+
+.btn {
+  @extend .btn;
+  background-color: $color-secondary-1-4;
+}
+
+.btn:hover {
+  @extend .btn:hover;
+  background-color: $color-secondary-1-0;
+}
+
+.btn:focus {
+  @extend .btn:focus;
+  background-color: $color-secondary-1-1;
+}
+
+  /* label color */
+   .input-field label {
+     color: $color-secondary-1-4;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: $color-secondary-1-4;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid $color-secondary-1-4;
+     box-shadow: 0 1px 0 0 $color-secondary-1-4;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: $color-secondary-1-4;
+   }
