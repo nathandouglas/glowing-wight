@@ -65,7 +65,11 @@ Rails.application.configure do
   # config.action_mailer.raise_delivery_errors = false
 
   # Must be set in order to allow google image proxy for gmail
+  # Configures the action_mailer's asset host to the production app's
+  # url in order to allow Google's proxy server access to images
   config.action_mailer.asset_host = 'https://aqueous-crag-5152.herokuapp.com/'
+
+  # Config for action_mailer
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
       address:              'smtp.gmail.com',

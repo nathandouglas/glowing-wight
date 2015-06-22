@@ -10,7 +10,7 @@ class EmailController < ApplicationController
 
     respond_to do |format|
       if @user.save && @email.save
-        #onSuccessful save send email
+        #onSuccessful save and send email
         UserMailer.thanks_email(@user).deliver_now
 
         format.html { redirect_to(root_path, notice: 'User was successfully created.') }

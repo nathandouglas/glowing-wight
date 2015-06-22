@@ -1,19 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  email: MyString
-  firstname: MyString
-  lastname: MyString
-  type: 
-  phone: MyString
-  street: MyString
-  zip: 
+max:
+  emailaddress: maxscherzer@nationals.com
+  firstname: max
+  lastname: scherzer
+  type:
+  phone: 123-456-7890
+  street: 2937 Monticello Dr
+  zip: 22042
 
-two:
-  email: MyString
-  firstname: MyString
-  lastname: MyString
-  type: 
-  phone: MyString
-  street: MyString
-  zip: 
+danny:
+  emailaddress: ""
+  firstname: danny
+  lastname: espinosa
+  type:
+  phone: 123-456-0987
+  street: 1st st.
+  zip: 29339
