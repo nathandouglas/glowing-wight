@@ -27,6 +27,9 @@ Rails.application.configure do
       enable_starttls_auto: true
   }
 
+  # Location for the action_mailer previews
+  config.action_mailer.preview_path = "#{Rails.root}/test/mailers/previews"
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
