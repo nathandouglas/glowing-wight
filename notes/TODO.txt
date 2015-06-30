@@ -1,0 +1,59 @@
+Set up admin mailer
+===================
+	When someone sends an email via the website, log their information and email to kevin's email address.
+
+	When someone sends an email again and user already exists inform the admin whether or not this is possibly a returning customer.
+
+Create admin tool
+=================
+
+	Update Customers
+	----------------
+	Create an admin portion of the site that enables Kevin to query, add, or delete customers.
+
+	Update Schedule
+	---------------
+	Enable admin's the ability to add dates to the master calendar. 
+
+	Email Notifications
+	-------------------
+	Allow admin the ability to send email notifications to customer(s).
+
+
+Create account system
+=====================	
+	
+	Create admin account
+	--------------------
+		Learn how to secure a website with login credentials and enable certain views.
+		An admin should have the ability to login to the site, whereas regular user's should not.
+		This link should be hidden from the page, and should be a link that an admin would manually navigate to.
+		Upon arriving to this screen, login credentials need to be provided, or a security cert needs to be present. 
+		I need to figure out which method is better to implement and how to implement certs. 
+
+	Create user accounts
+	--------------------
+		Outside customers should be allowed to register for newsletters and updates. 
+
+Create a schedule
+=================
+	Create a schedule where People can see available times.
+
+Create a page for 'Rates'
+=========================
+	Determine whether a Rates page is necessary.
+	Design/Mock a page to display typical rates for Kevin.
+
+Create payment system
+=====================
+	Allow customers that have created an account the ability to pay their bills online.
+
+Create schedule system
+======================
+	Allow registered customers the ability to request dates added to the schedule. 
+
+	Develop metrics
+	---------------
+		Work with Kevin to determine average amount of time required to complete an acre.
+		Pad the number on path ends to provide +/- 30 min of leniency between back-to-back customers. 
+		Use this number to provide customers with an idea of how long it will take to complete their yards.

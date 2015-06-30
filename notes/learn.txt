@@ -1,4 +1,4 @@
-Figure out where to put config data for service (e.g. "email")
+Figure out where to put config data for service (e.g. "emailaddress for mailer")
   Create an UNTRACKED config file that will be used to store password for email account on gmail
 
 Figure out how what setting to configure for deployment on Heroku.

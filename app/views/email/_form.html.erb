@@ -12,43 +12,43 @@
     </div>
   </div>
   <div class="row">
-  <div class="input-field col s5">
-    <%= u.label :email %>
-    <%= u.email_field :emailaddress, class: 'validate'%>
-  </div>
-  <div class="input-field col s5">
-    <%= u.label :phone %>
-    <%= u.telephone_field :phone, class: 'validate'%>
-  </div>
-  <div class="row">
-  <div class="input-field col s7">
-    <%= u.label :address %>
-    <%= u.text_field :street, class: 'validate'%>
-  </div>
-  <div class="input-field col s3">
-    <%= u.label :zip%>
-    <%= u.text_field :zip, class: 'validate'%>
-  </div>
-  </div>
-  <!-- Email Section -->
-  <%= fields_for :email do |e| %>
-  <div class="row">
-    <div class="input-field col s10">
-    <i class="primary-text-color mdi-editor-mode-edit prefix"></i>
-      <%= e.label :message %>
-      <%= e.text_area :body, class: 'materialize-textarea' %>
+    <div class="input-field col s5">
+      <%= u.label :email %>
+      <%= u.email_field :emailaddress, class: 'validate'%>
     </div>
-  </div>
-  <% end %>
+    <div class="input-field col s5">
+      <%= u.label :phone %>
+      <%= u.telephone_field :phone, class: 'validate'%>
+    </div>
+    <div class="row">
+      <div class="input-field col s7">
+        <%= u.label :address %>
+        <%= u.text_field :street, class: 'validate'%>
+      </div>
+      <div class="input-field col s3">
+        <%= u.label :zip%>
+        <%= u.text_field :zip, class: 'validate'%>
+      </div>
+    </div>
+    <!-- Email Section -->
+    <%= fields_for :email do |e| %>
+      <div class="row">
+        <div class="input-field col s10">
+          <i class="primary-text-color mdi-editor-mode-edit prefix"></i>
+          <%= e.label :message %>
+          <%= e.text_area :body, class: 'materialize-textarea' %>
+        </div>
+      </div>
+    <% end %>
 
-  <!-- Submit Button -->
-  <div class="row">
-    <div class="col s10 right-align">
-      <%= u.button "Send", type: 'submit', class: 'btn waves-effect waves-light' do %>
-        Send
-        <i class="mdi-content-send right"></i>
-      <% end %>
+    <!-- Submit Button -->
+    <div class="row">
+      <div class="col s10 right-align">
+        <%= u.button "Send", type: 'submit', class: 'btn waves-effect waves-light' do %>
+          Send
+          <i class="mdi-content-send right"></i>
+        <% end %>
+      </div>
     </div>
   </div>
-</div>
 <% end %>

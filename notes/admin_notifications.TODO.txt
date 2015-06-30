@@ -1,0 +1,5 @@
+[ ] Implement email to admin's email address when user complete's the contact us form.
+[ ] Move the admin's email address into a config file
+[ ] Move the system's email address to a config file
+[ ] Write test to ensure email is sent to admin when user completes form
+
